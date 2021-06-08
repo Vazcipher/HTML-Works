@@ -1,0 +1,36 @@
+body{
+    background: black;
+    height:1200px ;
+}
+.head{
+    text-align: center;
+    color: white;
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.container-div{
+    margin-left: 20px;
+}
+.card{
+    width: 125px;
+    height: 141px;
+    background: tomato;
+    float: left;
+    margin-left: 10px;
+}
+
+.row1{
+    margin-left: 23%;
+    float: left;
+}
+.row2{
+    float: left;
+    margin-left: 165px;
+    padding-top: 42px;
+}
+.row3{
+    float: left;
+    margin-left: 30px;
+    padding-top: 42px;
+}

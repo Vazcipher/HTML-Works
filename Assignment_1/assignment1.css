@@ -1,0 +1,44 @@
+.card{
+    width: 290px;
+    height: 355px;
+    background: blue;
+    float: left;
+    margin: auto;
+   
+}
+body{
+    background: black;
+}
+.center{
+    margin: auto;
+    width: 69%;
+    padding: 5px;
+}
+.image{
+    width: 290px;
+    height: 170px;
+   
+}
+.main-head{
+    text-align: center;
+    color: white;
+}
+.card{
+    border-style: groove;
+    border-color: bisque;
+    text-align: center;
+    border-color: darkorange;
+    text-align: center;
+    border-style: ridge;
+    border-width: 1px;
+    
+
+    
+}
+.img-head{
+    color: white;
+}
+p{
+    color: white;
+    line-height: 10px;
+}

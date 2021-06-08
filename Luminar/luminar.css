@@ -1,0 +1,223 @@
+.header-top{
+    background: #5e068a;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+
+/* body{
+    height: 1000px;
+} */
+
+.header-top a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.header-top-right{
+    float: right;
+    margin-right: 7px;
+    
+}
+
+.courses .col{
+    flex: 0;
+    min-height: 100px;
+}
+
+.row{
+    display: flex;
+}
+
+nav li{
+    display: block;
+}
+
+.main-menu{
+    display: inline-block !important;
+    position: relative;
+}
+ ul{
+    margin-top: -11px;
+ }
+
+li{
+    float: left;
+    /* margin-right: 20px; */
+    margin-left: 38px;
+}
+li a{
+    color: #2d3e50;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 52px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+li a:hover{
+    color: #5e068a;
+}
+.logo{
+    padding: 12px;
+}
+.logo img{
+    width: 240px;
+    height: 57px;
+    margin-left:-21px;
+}
+
+.main-menu-area{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-to-center{
+    padding: 13px;
+}
+
+.header-link{
+    height: 80px;
+    
+}
+
+.background-img{
+    width: 100%;
+    height: 500px;
+}
+
+.courses{
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.courses a{
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #5e068a;
+    padding: 9px 19px;
+    color: #fff;
+    text-decoration: none
+}
+
+.carousel-inner{
+    height: 500px;
+    
+}
+
+
+
+.carousel{
+    height: 500px;
+}
+
+.about-area .button-default{
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #5e068a;;
+    padding: 16px 27px;
+    text-decoration: none;
+    color: white;
+    margin-top: 21px; 
+}
+
+.about-area .button-default:hover{
+    background-color: white;
+    color: #5e068a;
+    transition: 0.3s;
+}
+
+.button-default{
+    background: #5e068a;
+}
+
+.btn-to-bottom{
+    margin-top: 50px;
+    margin-bottom: 30px
+}
+
+.about-area{
+    margin-top: 90px;
+}
+
+.about-area h3{
+    font-size: 32px;
+    color: #5e068a;
+    font-weight: 700px;
+    max-width: 540px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 22px;
+}
+
+.about-area .h3-to-offcolor{
+    color: #5e068a99;
+}
+
+
+.about-courses-area{
+    background: #f5f5f5;
+    height: 1000px;
+}
+
+.course-desc-head h3{
+    color: #5e068a;
+}
+.course-desc-head .desc-head{
+   text-align: center;
+    padding: 20px;
+    font-size: 32px;  
+}
+
+.courses .card{
+    width: 20rem;
+    height: 100px;
+}
+.our-course-area{
+    background-color: #fbfbfb;
+}
+
+.courses-col{
+    height: 368px;
+}
+.our-course-area .img-sec{
+    background-image: url("https://cache.careers360.mobi/media/article_images/2020/10/7/Poster_AI__Data_Science_JPG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    
+}
+
+.data-disc h3{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #5e068a;
+    margin-top: 20px; 
+    padding: 20px 35px;
+    cursor: pointer;
+}
+
+.card-text p{
+    margin-bottom: 9px;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+strong{
+    font-weight: 500;
+}
+.view-more-a{
+    color: #5e068a;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.view-btn{
+    margin-left: 35px;
+}

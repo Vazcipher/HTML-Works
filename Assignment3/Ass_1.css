@@ -1,0 +1,63 @@
+.nav{
+    background: gray;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 110px;
+    color: black;
+}
+.nav-options{
+
+}
+a:hover{
+    background: burlywood;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.card{
+    border: 1px solid black;
+    width: 335px;
+    height: 324px;
+    
+}
+.img{
+    width: 324px;
+    height: 175px;
+    margin: 5px;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.desc{
+    text-align: left;
+    margin: 5px;
+}
+.colp{
+    margin: 5px;
+    text-align: center;
+}
+.tbl-row{
+    display: flex;
+    justify-content: center;
+
+}
+.col{
+    border: 1px solid black;
+    width: 104px;
+    height: 34px;
+}

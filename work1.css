@@ -1,0 +1,34 @@
+.row{
+    width: 344px;
+    height: 200px;
+    background-color: greenyellow;
+    border: 1px solid;
+    position: relative;
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.col1,.col2,.col3{
+    width: 100px;
+    height: 100px;
+}
+.col1{
+    background-color: hotpink;
+    position: absolute;
+    left: 10px;
+}
+.col2{
+    background-color: indigo;
+    position: absolute;
+    left: 120px;
+    top: 0;
+}
+.col3{
+    background-color: lightcoral;
+    position: absolute;
+    top: 0;
+    left: 230px;
+}
+body{
+    height: 2000px;
+}
