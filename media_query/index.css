@@ -29,8 +29,10 @@
     }
     .col.col:nth-child(2){
         display: none;
+        
     }
     .col{
         width: 100%;
+        text-align: center;
     }
 }

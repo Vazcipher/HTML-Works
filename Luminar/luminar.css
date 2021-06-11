@@ -3,6 +3,29 @@
     color: white;
     position: relative;
     padding: 10px;
+    width: 100%;
+}
+
+.header-top .container .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+ }
+
+@media(max-width:500px){
+    .header-top .container .row{
+        flex-direction: column;
+    }
+   .header-top .container .row .col{
+        text-align: center;
+    }
+    
+    /* .carousel .carousel-item img{
+       width: none;
+    } */
 }
 
 /* body{
