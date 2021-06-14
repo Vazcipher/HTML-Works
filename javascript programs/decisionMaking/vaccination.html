@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    Age <input type="number" id="age" value=""><br><br>
+    Any health issue? <input type="health" id="myNumber" >
+    <button onclick="myFunction()">Try it</button>
+
+
+</head>
+<body>
+    
+</body>
+<script>
+    function myFunction() {
+      var age = document.getElementById("age").value;
+      var health_issue = document.getElementById("health").value;
+      if(age>65){
+        document.getElementById("demo").innerHTML = "Eligiible";
+      }
+      else{
+        document.getElementById("demo").innerHTML = "Not elgible";
+      }
+    }
+    </script>
+</html>
