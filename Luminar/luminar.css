@@ -250,3 +250,147 @@ strong{
 .view-btn{
     margin-left: 35px;
 }
+
+.footer{
+    width: 100%;
+}
+/* 
+.watsapp-link{
+    background: #5e068a14 none repeat scroll 0 0;
+    color: #5e068a;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+/* .watsapp-link .row{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+} */
+/* .watsapp-link .row .watsapp-img{
+    display: block;
+    width: 70px;
+    height: 50px;
+}
+.watsapp-link .row .ph-number{
+
+} */
+
+/* .watsapp-content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .watsapp-link img{
+    width: 50px;
+} */
+
+/* .watsapp-link .row h3 {
+    color: #5e068a;
+    font-size: 24px;
+} */
+
+/* .widget-area{
+    background: #1d0429 none repeat scroll 0 0;
+    color: #ffffff;
+    padding: 75px 0 65px;
+} */
+
+/* .social-icons{
+    margin-left: 16px;
+    margin-top: 17px;
+}
+
+.social-icons a{
+    background: white;
+    color: #2f5379;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 31px;
+    height: 36px;
+    text-align: center;
+    line-height: 34px;
+} */
+
+/* .single-widget h3{
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 14px;
+} */
+
+/* .single-widget ul{
+    margin-left: -53px;
+    
+} */
+/* .single-widget ul li{
+    list-style: none;
+    text-transform: lowercase;
+    
+    
+} */
+
+/* .single-widget ul li a{
+    line-height: 25px;
+    color: white;
+    text-transform: capitalize;
+}
+
+@media(max-width:500px){
+    .footer{
+        margin-top: 1022px;
+    }
+} */
+
+/* @media(max-width:400px){
+    .watsapp-link{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}  */
+
+.message-area{
+    background: #5e068a14 ;
+    position: relative;
+    color: #5e068a;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+.message-area .row{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* .message-area .row div{
+    flex: 1;
+} */
+
+.message-area .row img{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+/* .message-area .row .watsapp{
+    float: left;
+} */
+.message-area .row h3{
+    font-size: 24px;
+    margin: 0;
+    display: inline-block;
+}
+
+.watsp-img{
+    width: 20%;
+}
