@@ -36,13 +36,9 @@ for(let data of temparature){
 console.log(weather);
 
 
-var sorted_temp={}
-
-
-
-
-
-
+// function sortByTemp() {
+    
+// }
 
 
 // var weather={}                                       
