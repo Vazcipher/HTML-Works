@@ -1,7 +1,7 @@
-// var arr=[2,3,1,5,6,8]
+var arr=[2,3,4,1,2,3]
 
-// var even=arr.filter(num=>num%2==0)
-// console.log(even);
+arr.forEach(num=>console.log(num))
+
 
 var products=[
     {code:1000,name:"garlic",mrp:120,aval_qty:10},
@@ -16,16 +16,13 @@ var products=[
     {code:1009,name:"bittergod",mrp:50,aval_qty:5},
 ]
 
-// var below_fifty=products.filter(item=>item.mrp<50)
-// console.log(below_fifty);
-
-//print 30-50 product
-//print out of stock products
-
-var range_products=products.filter(item=>item.mrp>=30&item.mrp<=50)
-console.log(`Product between 30 and 50:${range_products}`);
+var sort_qty=products.sort((item1,item2)=>item2.aval_qty-item1.aval_qty).forEach(item=>console.log(item))
+console.log(sort_qty);
 
 
-
-var out_of_stock=products.filter(item=>item.aval_qty==0)
-ouOfStock=console.log(out_of_stock);
+var sort_qty=products.sort((item1,item2)=>item2.aval_qty-item1.aval_qty).forEach(item=>{
+    if(item.aval_qty>20){
+        console.log(item);
+    }
+})
+console.log(sort_qty);

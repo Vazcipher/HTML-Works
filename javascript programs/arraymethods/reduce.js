@@ -1,7 +1,13 @@
-// var arr=[2,3,1,5,6,8]
+// var arr=[3,4,2,5,4]
 
-// var even=arr.filter(num=>num%2==0)
-// console.log(even);
+// var total=arr.reduce((num1,num2)=>num1+num2)
+// console.log(total);
+
+// var max=arr.reduce((num1,num2)=>num1>num2?num1:num2)
+// console.log(max);
+
+// var min=arr.reduce((num1,num2)=>num1<num2?num1:num2)
+// console.log(min);
 
 var products=[
     {code:1000,name:"garlic",mrp:120,aval_qty:10},
@@ -16,16 +22,8 @@ var products=[
     {code:1009,name:"bittergod",mrp:50,aval_qty:5},
 ]
 
-// var below_fifty=products.filter(item=>item.mrp<50)
-// console.log(below_fifty);
+var costly_product=products.reduce((item1,item2)=>item1.mrp>item2.mrp?item1:item2)
+console.log(costly_product);
 
-//print 30-50 product
-//print out of stock products
-
-var range_products=products.filter(item=>item.mrp>=30&item.mrp<=50)
-console.log(`Product between 30 and 50:${range_products}`);
-
-
-
-var out_of_stock=products.filter(item=>item.aval_qty==0)
-ouOfStock=console.log(out_of_stock);
+var low_cost=products.reduce((item1,item2)=>item1.mrp>item2.mrp?item2:item1)
+console.log(low_cost);
