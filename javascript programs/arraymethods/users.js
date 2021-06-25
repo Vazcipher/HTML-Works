@@ -231,6 +231,11 @@ var users=[
     }
   ]
 
+  // var names=users.forEach(user=>console.log(user.name))
+  // var names=users.forEach(user=>console.log(user.address.zipcode))
+  var id=users.find(user=>user.id==9)
+  console.log(id);
+
   //print all name
 
 //   var user_names=users.map(user=>user.username).forEach(name=>console.log(name))
@@ -242,5 +247,5 @@ var users=[
 
 //print name ,lattitude longitude
 
-var location=users.forEach(user=>console.log(user.name,user.address.geo+" "+user.address.geo.lat))
-console.log(location);
+// var location=users.forEach(user=>console.log(user.name,user.address.geo+" "+user.address.geo.lat))
+// console.log(location);

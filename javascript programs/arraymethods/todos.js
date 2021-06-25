@@ -1202,16 +1202,41 @@ var todos=[
   ]
 
   //print count of complited todos
+  let no_count=todos.filter(todo=>todo.completed==true).length
+  console.log(no_count);
   //priint count of complited todos by search id 1
+  let todo_complted_by_id_1=todos.filter(todo=>todo.completed==1&todo.userId==1).length
+  console.log(todo_complted_by_id_1);
   //print no of pendig todos of user_id 1
+  let pending_todos=todos.filter(todo=>todo.completed==0&todo.userId==1).length
+  console.log(pending_todos);
+
   //map each user object with complited:count pending:count
   //{userid:1,total:20,completed:10,pending:10}
 
-  var no_of_completed=todos.forEach(todo=>{if(todo.completed==1){ 
-        let count=0;  
-        count+=1;
+  var mytodos={}
+
+  for(let todo of todos){
+    let id=todo.userId
+    if(id in mytodos){
+      if(todo.completed==true){
+        mytodos[id]["total"]+=1;
+        mytodos[id]["Finished"]+=1;
       }
-  })
-  console.log(no_of_completed);
+      else{
+        mytodos[id]["total"]+=1;
+        mytodos[id]["Pending"]+=1;
+      }
+    }
+    else{
+      if(todo.completed==true){
+        mytodos[id]={total:1,Finished:1,Pending:0}
+      }
+      else{
+        mytodos[id]={total:1,Finished:0,Pending:1}
+      }
+    }
+  }
+console.log(mytodos);
 
 //   console.log(no_of_completed);
