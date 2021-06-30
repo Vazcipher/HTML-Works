@@ -1,11 +1,11 @@
 //class? plan, blue print, template
 
-//Object - real world entity, constrected object with the plan (class)
+//Object - real world entity, constructed object with the plan (class)
 
-//reference = objectinte melil operation perfom cheyyan
+//reference = object inte melil operation perfom cheyyan
 
 class Employee{
-    setEmployee(eid,e_name,desig,slary){
+    constructor(eid,e_name,desig,slary){
         this.eid=eid;
         this.e_name=e_name;
         this.desig=desig;
@@ -16,9 +16,8 @@ class Employee{
     }
 }
 
-var employee=new Employee()
-employee.setEmployee(1000,"vasif","Developer",26700)
-employee.printDetails()
+var employee=new Employee(1000,"vasif","Developer",26700)
 
+employee.printDetails();
 
 
