@@ -15,11 +15,16 @@ class Employee{
 
 }
 
-var emp1=new Employee();
-var emp2=new Employee();
-var emp3=new Employee();
-var emp4=new Employee();
-var emp5=new Employee();
+var emp1=new Employee(1000,"vasif","developer",15000,2);
+var emp2=new Employee(1001,"jaanu","developer",25000,2);
+var emp3=new Employee(1003,"ravi","QA",25000,3);
+var emp4=new Employee(1004,"akshay","market",25000,2);
+var emp5=new Employee(1001,"sabith","tester",25000,4);
+var employees=[];
+employees.push(emp1,emp2,emp3,emp4,emp5);
+
+var icon_emp=employees.reduce((obj1,obj2)=>obj1.salary>obj2.salary?obj1:obj2)
+console.log(icon_emp);
 
 
 //create 5 emlpoyee obj
