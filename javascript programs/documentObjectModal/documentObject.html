@@ -1,0 +1,39 @@
+<h1>Javascript DOM</h1>
+<h1 id="hone">Document Object Model</h1>
+<h2>Oducment object model</h2>
+<ul>
+    <li class="classname">document.getElementsByTag()</li>
+    <li class="second">document.getElementId()</li>
+    <li class="second">document.getElementByClassName()</li>
+
+</ul>
+
+<script>
+    var hone=document.getElementsByTagName("h1")
+    for(let tag of hone){
+        tag.style.color="red"
+    }
+    // var htwo=document.getElementsByTagName("h2")
+    // for(let tag of htwo){
+    //     tag.style.color="blue"
+    // }
+
+    var hvan=document.getElementById("hone")
+    hvan.style.color="green"
+
+    var byclassname=document.getElementsByClassName("classname")
+    for(let li of byclassname){
+        li.style.color="pink"
+    }
+
+    var lis=document.querySelectorAll(".second")
+    for(let li of lis){
+        li.style.color="orange"
+    }
+
+    var htwo=document.querySelector("h2")
+        htwo.innerHTML="<em>Document object model</em>"
+        //textContent
+        htwo.style.color="cyan"
+
+</script>

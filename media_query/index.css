@@ -9,7 +9,7 @@
 }
 .col{
     width: 30%;
-    height: 130px;
+     height: 130px;
     margin-top: 10px;
 }
 .col:nth-child(1){
