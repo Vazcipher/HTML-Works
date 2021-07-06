@@ -4,65 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Book</title>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <input type="text" id="bk_name" placeholder="book name"><br>
-    <input type="text" id="autor" placeholder="Author name"><br>
-    <input type="text" id="price" placeholder="price"><br>
-    <input type="text" id="qty" placeholder="quantity name"><br>
-    <button onclick="submitBook()">Submit</button>
-    <button onclick="fetchAllBook()">List All Book</button>
 
-    <div>
-        <table>
-            <tr>
-                <td>BOOK NAME</td>
-                <td>AUTHOR</td>
-                <td>PRICE</td>
-                <td>QUANTITY</td>
-            </tr>
-            <tbody id="result">
-                <tr>
+    <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <h3 style="text-align: center;">Book Library</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="bk_name" placeholder="book name" required><br>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="autor" placeholder="Author name" required><br>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="price" placeholder="price" required><br>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="qty" placeholder="quantity name" required><br>
+                    </div>
+                    <div class="input-group mb-3" style="display: flex; justify-content: space-between;">
+                            <button type="button" onclick="submitBook()" type="button" class="btn btn-primary">Submit</button>
+                            <button  type="button" onclick="fetchAllBook()" type="button" class="btn btn-info">List All Books</button>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" id="srch" class="form-control" placeholder="Find a book" aria-label="findBook" aria-describedby="button-addon2">
+                        <button onclick="findBook()" class="btn btn-outline-info" type="button" id="button-addon2">Find</button>
+                      </div>
+                </div>
+                <div id="result_area" class="col">
                     
-                </tr>
-            </tbody>
-        </table>
+                </div>
+            </div>
+            <div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">BOOK NAME</th>
+                        <th scope="col">AUTHOR</th>
+                        <th scope="col">PRICE</th>
+                        <th scope="col">QUANTITY</th>
+                      </tr>
+                    </thead>
+                    <tbody id="result">
+                        
+                    </tbody>
+                  </table>
+            </div>
     </div>
+    
 
 </body>
 <script>
 
-    function findBook() {
-            let bname = srch.value;
-            if (bname in localStorage) {
-                let book = JSON.parse(localStorage.getItem(bname))
-                console.log(book);
-                let html_data = `<div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">${book.book_name}</li>
-                    <li class="list-group-item">${book.author}</li>
-                    <li class="list-group-item">${book.amount}</li>
-                    <li class="list-group-item">${book.qty}</li>
-
-                </ul>
-                </div>`
-                resultarea.innerHTML=html_data
-
-            }
-            else {
-                alert("book not exist with this name")
-            }
-        }
-
-
-    function populate(books){
-        let html_data="";
-        for(let book of books){
-            html_data+=`<tr><td>${book.book_name}</td><td>${book.author}</td><td>${book.amount}</td><td>${book.quantity}</td></tr>`
-        }
-        result.innerHTML=html_data
-    }
 
     function submitBook(){
         let book_name=bk_name.value;
@@ -81,7 +82,6 @@
         }
         
         location.reload(true)
-
         
     }
 
@@ -96,6 +96,30 @@
         console.log(books);
         populate(books);
     }
+
+    function populate(books){
+        let html_data="";
+        for(let book of books){
+            html_data+=`<tr><td>${book.book_name}</td><td>${book.author}</td><td>${book.amount}</td><td>${book.quantity}</td></tr>`
+        }
+        result.innerHTML=html_data
+    }
+
+    function findBook() {
+            let bname = srch.value;
+            if (bname in localStorage) {
+                let book = JSON.parse(localStorage.getItem(bname))
+                console.log(book);
+                let html_data=`<tr><td>${book.book_name}</td><td>${book.author}</td><td>${book.amount}</td><td>${book.quantity}</td></tr>`
+
+                console.log(html_data);
+                document.querySelector("#result").innerHTML=html_data
+
+            }
+            else {
+                alert("book not exist with this name")
+            }
+        }
 
 </script>
 </html>
