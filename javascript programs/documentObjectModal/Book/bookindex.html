@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="bk_name" placeholder="book name"><br>
+    <input type="text" id="autor" placeholder="Author name"><br>
+    <input type="text" id="price" placeholder="price"><br>
+    <input type="text" id="qty" placeholder="quantity name"><br>
+    <button onclick="submitBook()">Submit</button>
+    <button onclick="fetchAllBook()">List All Book</button>
+
+    <div>
+        <table>
+            <tr>
+                <td>BOOK NAME</td>
+                <td>AUTHOR</td>
+                <td>PRICE</td>
+                <td>QUANTITY</td>
+            </tr>
+            <tbody id="result">
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script>
+
+    function findBook() {
+            let bname = srch.value;
+            if (bname in localStorage) {
+                let book = JSON.parse(localStorage.getItem(bname))
+                console.log(book);
+                let html_data = `<div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">${book.book_name}</li>
+                    <li class="list-group-item">${book.author}</li>
+                    <li class="list-group-item">${book.amount}</li>
+                    <li class="list-group-item">${book.qty}</li>
+
+                </ul>
+                </div>`
+                resultarea.innerHTML=html_data
+
+            }
+            else {
+                alert("book not exist with this name")
+            }
+        }
+
+
+    function populate(books){
+        let html_data="";
+        for(let book of books){
+            html_data+=`<tr><td>${book.book_name}</td><td>${book.author}</td><td>${book.amount}</td><td>${book.quantity}</td></tr>`
+        }
+        result.innerHTML=html_data
+    }
+
+    function submitBook(){
+        let book_name=bk_name.value;
+        let author=autor.value;
+        let amount=price.value;
+        let quantity=qty.value;
+
+        let book={book_name,author,amount,quantity}
+
+        if(book_name in localStorage){
+            alert("This book is already exist")
+        }
+        else{
+            localStorage.setItem(book.book_name,JSON.stringify(book))
+            alert("New book created")
+        }
+        
+        location.reload(true)
+
+        
+    }
+
+    function fetchAllBook(){
+        let books=[];
+
+        for(let i=0;i<localStorage.length;i++){
+            let key=localStorage.key(i);
+            let book=JSON.parse(localStorage.getItem(key))
+            books.push(book)
+        }
+        console.log(books);
+        populate(books);
+    }
+
+</script>
+</html>

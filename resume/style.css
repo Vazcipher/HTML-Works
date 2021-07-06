@@ -1,8 +1,15 @@
-.container{
+/* .container{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     
+} */
+.resume-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: center;
+    margin-left: 150px;
 }
 
 .left-area{
@@ -66,7 +73,7 @@ input[type="radio"]{
    margin-top: 0%;
 }
 .name-head{
-    width: 80%;
+    width: 75%;
     height: 150px;
     background: rgb(38 161 161);
     margin-top: 0%;
@@ -78,10 +85,26 @@ input[type="radio"]{
     font-size: 2em;
     font-weight: 2;
     margin-left: 10px;
+    margin-bottom: 0px;
 }
-.name-head h4{
+.name-head p{
     color: white;
     margin-left: 10px;
-    font-weight: 2;
-    margin-top: 0%;
+    font-weight: 1;
+    font-size: 4mm;
+    margin-top: -16px;
+}
+.right-area p{
+    margin-top: 5px;
+    font-size: 4mm;
+}
+
+.career-area{
+    width: 75%;
+}
+.work-experiance{
+    width: 95%;
+}
+.career-area p{
+    color: rgb(38 161 161);
 }
